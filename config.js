@@ -1,6 +1,6 @@
 // Supabase Configuration
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const SUPABASE_URL = 'https://lkxdaoningeoqxhiuwtg.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxreGRhb25pbmdlb3F4aGl1d3RnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjAxODA3MjAsImV4cCI6MjA3NTc1NjcyMH0.twIn987a2hw7_gf1gFZIzOxZRB8JaT2IHGePOBUL2DY';
 
 // Office Location Configuration (Riyadh coordinates as default)
 const OFFICE_LOCATION = {
