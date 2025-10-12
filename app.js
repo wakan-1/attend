@@ -223,20 +223,20 @@ async function showAdminDashboard() {
 async function loadTodayAttendance() {
     try {
         const today = new Date().toISOString().split('T')[0];
-        
+
         const { data, error } = await supabaseClient
             .from('attendance_records')
             .select('*')
             .eq('user_id', currentUser.id)
             .eq('date', today)
-            .single();
-        
+            .maybeSingle();
+
         const checkInStatus = document.getElementById('checkInStatus');
         const checkOutStatus = document.getElementById('checkOutStatus');
         const checkInBtn = document.getElementById('checkInBtn');
         const checkOutBtn = document.getElementById('checkOutBtn');
-        
-        if (error && error.code !== 'PGRST116') {
+
+        if (error) {
             console.error('خطأ في جلب بيانات الحضور:', error);
             return;
         }
