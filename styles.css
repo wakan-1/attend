@@ -713,6 +713,56 @@ table tr:hover {
     border: 1px solid #feb2b2;
 }
 
+.attendance-filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.attendance-filters input {
+    padding: 10px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f7fafc;
+    transition: all 0.3s ease;
+}
+
+.attendance-filters input:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+}
+
+.attendance-filters .btn-primary {
+    width: auto;
+    padding: 10px 20px;
+    display: inline-flex;
+}
+
+.status-badge.on_leave {
+    background: #fed7e2;
+    color: #d69e2e;
+}
+
+form select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 16px;
+    background: #f7fafc;
+    transition: all 0.3s ease;
+}
+
+form select:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .login-card {
